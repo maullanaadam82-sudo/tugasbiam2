@@ -1,0 +1,190 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  height: 100%;
+  background-color:rgb(36, 13, 135);
+}
+
+.page-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+    background-color: rgb(36, 13, 135);
+    background-size: cover;
+}
+
+.login-box {
+  background:rgb(36, 13, 135);
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  width: 400px;
+  max-width: 90%;
+  text-align: center;
+}
+
+.logo {
+  width: 100px;
+  margin-bottom: 16px;
+}
+
+.input-field {
+  width: 80%;
+  padding: 10px 10px 10px 40px;
+  margin: 10px 0;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  background-repeat: no-repeat;
+  background-position: 10px center;
+}
+
+.input-field.user {
+  background-image: url("/user.png");
+}
+
+.input-field.lock {
+  background-image: url("/lock.png");
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 15px;
+  background: #ff0008;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #ab1119;
+}
+
+.message {
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+.error {
+  color: red;
+}
+
+.success {
+  color: green;
+}
+.register-link {
+  margin-top: 15px;
+  text-align: center;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.register-link a {
+  color: #00ff2f;
+  text-decoration: none;
+}
+
+.register-link a:hover {
+  text-decoration: underline;
+}
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  height: 100%;
+}
+
+.page-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url("/BG.png") center/cover no-repeat;
+}
+
+.login-box {
+  background: rgb(36, 13, 135);
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  width: 400px;
+  max-width: 90%;
+  text-align: center;
+}
+
+.logo {
+  width: 100px;
+  margin-bottom: 16px;
+}
+
+.input-field {
+  width: 80%;
+  padding: 10px 10px 10px 40px;
+  margin: 10px 0;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  background-repeat: no-repeat;
+  background-position: 10px center;
+}
+
+.input-field.user {
+  background-image: url("/user.png");
+  background-color: rgb(36, 13, 135) ;
+  color: #ffffff;
+}
+
+.input-field.lock {
+  background-image: url("/lock.png");
+  background-color: rgb(36, 13, 135) ;
+  color: #ffffff;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 15px;
+  background: #ff0008;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #ab1119;
+}
+
+.message {
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+.error {
+  color: red;
+}
+
+.success {
+  color: rgb(2, 255, 2);
+}
+
+.bottom-text {
+  margin-top: 15px;
+  font-size: 14px;
+}
+h2{
+  color: #ffffff;
+}
+p{
+  color: #ffffff;
+}
+
