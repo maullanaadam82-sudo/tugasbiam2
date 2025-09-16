@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import "./kalkulator.css"; // styling dipisah ke file css biar rapi
 
 export default function Kalkulator() {
@@ -27,19 +28,21 @@ export default function Kalkulator() {
   }
 
   function logout() {
-    localStorage.removeItem("token");
-    window.location.href = "/login";
-  }
+  localStorage.removeItem("token");
+  window.location.href = "/login"; 
+}
+
 
   return (
     <div className="container">
       <div className="sidebar">
-        <h2>Menu</h2>
-        <a href="/dashboard">Beranda</a>
-        <a href="/kalkulator">Kalkulator</a>
-        <a href="/profil">Profil</a>
-        <a href="#" onClick={logout}>Logout</a>
-      </div>
+  <h2>Menu</h2>
+  <Link to="/dashboard">Beranda</Link>
+  <Link to="/kalkulator">Kalkulator</Link>
+  <Link to="/profil">Profil</Link>
+  <a href="#" onClick={logout}>Logout</a>
+</div>
+
 
       <div className="main">
         <header>

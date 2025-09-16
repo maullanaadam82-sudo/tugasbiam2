@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import "./dashboard.css";
 
 export default function Dashboard() {
@@ -169,12 +170,12 @@ export default function Dashboard() {
   return (
     <div className="container">
       <div className="sidebar">
-        <h2>Menu</h2>
-        <a href="#">Beranda</a>
-        <a href="kalkulator">Calkulator</a>
-        <a href="profil">Profil</a>
-        <a href="#" onClick={logout}>Logout</a>
-      </div>
+  <h2>Menu</h2>
+  <Link to="/dashboard">Beranda</Link>
+  <Link to="/kalkulator">Kalkulator</Link>
+  <Link to="/profil">Profil</Link>
+  <a href="#" onClick={logout}>Logout</a>
+</div>
 
       <div className="main">
         <header>
