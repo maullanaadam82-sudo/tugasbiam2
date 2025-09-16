@@ -88,7 +88,7 @@ header {
     gap: 12px;
 }
 
-kalkulator-button {
+button {
     padding: 20px;
     font-size: 20px;
     border: none;
