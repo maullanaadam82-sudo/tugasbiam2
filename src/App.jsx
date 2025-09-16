@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import "./index.css";   
 
 export default function App() {
   const [username, setUsername] = useState("");
