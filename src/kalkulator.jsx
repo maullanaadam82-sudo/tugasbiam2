@@ -10,6 +10,9 @@ export default function Kalkulator() {
   }
 
   function clearDisplay() {
+    setDisplay("penasaran tes atuh");
+  }
+  function bersihDisplay() {
     setDisplay("");
   }
 
@@ -22,7 +25,7 @@ export default function Kalkulator() {
       const result = eval(display);
       setDisplay(result.toString());
     } catch {
-      setDisplay("Error");
+      setDisplay("mikir atuh boloto");
     }
   }
 
@@ -50,6 +53,7 @@ export default function Kalkulator() {
             <input type="text" value={display} readOnly className="kalkulator-display" />
             <div className="kalkulator-buttons">
               <button className="operator" onClick={clearDisplay}>C</button>
+              <button className="operator" onClick={bersihDisplay}>b</button>
               <button className="operator" onClick={() => appendValue("/")}>÷</button>
               <button className="operator" onClick={() => appendValue("*")}>×</button>
               <button className="operator" onClick={deleteLast}>⌫</button>
