@@ -19,7 +19,7 @@ export default function Dashboard() {
   useEffect(() => {
     if (!token) {
       alert("Harus login dulu!");
-      window.location.href = "login.html";
+      window.location.href = "/";
     }
     loadTugas();
   }, []);
@@ -164,7 +164,7 @@ export default function Dashboard() {
 
   function logout() {
     localStorage.removeItem("token");
-    window.location.href = "login.html";
+    window.location.href = "/";
   }
 
   return (

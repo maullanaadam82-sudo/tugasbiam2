@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import "./kalkulator.css"; // styling dipisah ke file css biar rapi
+import "./kalkulator.css"; 
 
 export default function Kalkulator() {
   const [display, setDisplay] = useState("");
@@ -19,7 +19,6 @@ export default function Kalkulator() {
 
   function calculate() {
     try {
-      // ⚠️ eval berbahaya kalau input dari luar, tapi untuk kalkulator lokal masih oke
       const result = eval(display);
       setDisplay(result.toString());
     } catch {
@@ -28,30 +27,28 @@ export default function Kalkulator() {
   }
 
   function logout() {
-  localStorage.removeItem("token");
-  window.location.href = "/login"; 
-}
-
+    localStorage.removeItem("token");
+    window.location.href = "/"; 
+  }
 
   return (
-    <div className="container">
-      <div className="sidebar">
-  <h2>Menu</h2>
-  <Link to="/dashboard">Beranda</Link>
-  <Link to="/kalkulator">Kalkulator</Link>
-  <Link to="/profil">Profil</Link>
-  <a href="#" onClick={logout}>Logout</a>
-</div>
+    <div className="kalkulator-body">
+      <div className="kalkulator-sidebar">
+        <h2>Menu</h2>
+        <Link to="/dashboard">Beranda</Link>
+        <Link to="/kalkulator">Kalkulator</Link>
+        <Link to="/profil">Profil</Link>
+        <a href="#" onClick={logout}>Logout</a>
+      </div>
 
-
-      <div className="main">
-        <header>
+      <div className="kalkulator-main">
+        <header className="kalkulator-header">
           <h1>Nirwana Resto</h1>
         </header>
-        <div className="calculator-container">
-          <div className="calculator">
-            <input type="text" value={display} readOnly />
-            <div className="buttons">
+        <div className="kalkulator-container">
+          <div className="kalkulator-box">
+            <input type="text" value={display} readOnly className="kalkulator-display" />
+            <div className="kalkulator-buttons">
               <button className="operator" onClick={clearDisplay}>C</button>
               <button className="operator" onClick={() => appendValue("/")}>÷</button>
               <button className="operator" onClick={() => appendValue("*")}>×</button>
